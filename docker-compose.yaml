@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  db:
+    image: restsql/mysql-sakila:latest
+    restart: on-failure
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
